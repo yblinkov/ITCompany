@@ -14,7 +14,7 @@ PersonalCard::PersonalCard():PersonalCard("Name", " 11"," dd",132 ," pp","PP ","
 	cout << "Default Constructor of class PersonalCard" << endl;
 }
 
-PersonalCard::PersonalCard(string m_FirstName, string m_Birthday, string m_BirthdayPlace, int m_CurrentExperience, string m_Position, string m_Pension�ertificate, string m_MedicalInsurance, string m_TaxID, string m_MaritalStatus, int m_Children, string m_EducationDocument, string m_PassportNumberandSeries){
+PersonalCard::PersonalCard(string m_FirstName, string m_Birthday, string m_BirthdayPlace, int m_CurrentExperience, string m_Position, string m_PensionCertificate, string m_MedicalInsurance, string m_TaxID, string m_MaritalStatus, int m_Children, string m_EducationDocument, string m_PassportNumberandSeries){
 	cout << "Constructor of Inicialization of 5 arguments PersonalCard" << endl;
 	Birthday = m_Birthday;
 	BirthdayPlace = m_BirthdayPlace;
