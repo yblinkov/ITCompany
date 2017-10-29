@@ -1,4 +1,5 @@
 #include "HR.h"
+
 HR::HR() : HR("Ivan Ivanovych Ivanov", "Head of HR", false) {
     cout << "Default Constructor of class HR" << endl;
 }
@@ -17,42 +18,52 @@ HR::~HR() {
     std::cout << "Destroying object HR\n";
 	delete docs;
 }
+
 std::string HR::WriteOrderInPersonalCard()
 {
 	return "";
 }
+
 int HR::AllowToGoOnBusinessTrip()
 {
 	return 1;
 }
+
 int HR::AllowToGoOnTrainingCourses()
 {
 	return 1;
 }
+
 int HR::AllowToGoOnVacation()
 {
 	return 1;
 }
+
 int HR::AllowToTakeTheHospital()
 {
 	return 1;
 }
+
 std::string HR::ReturnDocs()
 {
 	return "";
 }
+
 std::string HR::GivingAChangesInPersonalCardofWorker()
 {
 	return "";
 }
+
 std::string HR::PuttingMarkOfReckoningInEmploymentHistoryBook()
 {
 	return "";
 }
+
 std::string HR::AddingToAPersonalCardMarkThatDocumentsAreReturned()
 {
 	return "";
 }
+
 std::string HR::PuttingAMarkInEmploymentHistoryBook()
 {
 	return "";

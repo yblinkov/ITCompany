@@ -36,6 +36,7 @@ personalCard(e_copyFrom->personalCard){
 Employee::~Employee() {
     std::cout << "Destroying object Employee\n";
 }
+
 void Employee::Dismiss() {
 }
 
