@@ -10,7 +10,9 @@ int main() {
     cout << "Yevgeniy Blinkov Group IC-63" << endl;
     cout << "Start modelling..." << endl;
 
-    IT_Company *m_IT_Company1 = new IT_Company();
+	IT_Company *m_IT_Company1 = new IT_Company();
+	{IT_Company("Default company"); }
+	{IT_Company(1, "Default company"); }
     {
 
         IT_Company m_IT_Company2(m_IT_Company1);

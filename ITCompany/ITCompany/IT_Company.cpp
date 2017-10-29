@@ -16,11 +16,11 @@ IT_Company::IT_Company(int EmployeeNum, string companyName){
 	employee.push_back(new Employee());
 }
 
-IT_Company::IT_Company(string companyName) : IT_Company(1, companyName){
+IT_Company::IT_Company(string companyName) /*: IT_Company(1, companyName)*/{
 	cout << "Constructor of Inicialization 1 argument of IT_Company" << endl;
 }
 
-IT_Company::IT_Company(): IT_Company("Default company") {
+IT_Company::IT_Company()/*: IT_Company("Default company")*/ {
 	cout << "Default Constructor of class IT_Company" << endl;
 }
 

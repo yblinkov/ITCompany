@@ -1,30 +1,5 @@
 #include "PersonalCard.h"
 #include "Employee.h"
-
-void Employee::Dismiss() {
-    // TODO : implement
-}
-
-std::string Employee::GetNewPosition() {
-    // TODO : implement
-    return "";
-}
-
-int Employee::GoOnTrainingCourses() {
-    // TODO : implement
-    return 1;
-}
-
-std::string Employee::GiveResume() {
-    // TODO : implement
-    return "";
-}
-
-std::string Employee::AcceptEmploymentContract() {
-    // TODO : implement
-    return "";
-}
-
 Employee::Employee() : Employee("11.11.11", "prosto!", 666, "12.12.12", "neprosto!", 13, "13.13.13") {
     cout << "Default Constructor of class Employee" << endl;
 }
@@ -59,4 +34,27 @@ Employee::Employee(Employee *e_copyFrom) {
 
 Employee::~Employee() {
     std::cout << "Destroying object Employee\n";
+}
+void Employee::Dismiss() {
+	// TODO : implement
+}
+
+std::string Employee::GetNewPosition() {
+	// TODO : implement
+	return "";
+}
+
+int Employee::GoOnTrainingCourses() {
+	// TODO : implement
+	return 1;
+}
+
+std::string Employee::GiveResume() {
+	// TODO : implement
+	return "";
+}
+
+std::string Employee::AcceptEmploymentContract() {
+	// TODO : implement
+	return "";
 }

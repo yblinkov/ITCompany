@@ -33,3 +33,116 @@ HR::~HR() {
     std::cout << "Destroying object HR\n";
 	delete docs;
 }
+std::string HR::WriteOrderInPersonalCard()
+{
+	// TODO : implement
+	return "";
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HR::AllowToGoOnBusinessTrip()
+// Purpose:    Implementation of HR::AllowToGoOnBusinessTrip()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int HR::AllowToGoOnBusinessTrip()
+{
+	// TODO : implement
+	return 1;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HR::AllowToGoOnTrainingCourses()
+// Purpose:    Implementation of HR::AllowToGoOnTrainingCourses()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int HR::AllowToGoOnTrainingCourses()
+{
+	// TODO : implement
+	return 1;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HR::AllowToGoOnVacation()
+// Purpose:    Implementation of HR::AllowToGoOnVacation()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int HR::AllowToGoOnVacation()
+{
+	// TODO : implement
+	return 1;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HR::AllowToTakeTheHospital()
+// Purpose:    Implementation of HR::AllowToTakeTheHospital()
+// Return:     int
+////////////////////////////////////////////////////////////////////////
+
+int HR::AllowToTakeTheHospital()
+{
+	// TODO : implement
+	return 1;
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HR::ReturnDocs()
+// Purpose:    Implementation of HR::ReturnDocs()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string HR::ReturnDocs()
+{
+	// TODO : implement
+	return "";
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HR::GivingAChangesInPersonalCardofWorker()
+// Purpose:    Implementation of HR::GivingAChangesInPersonalCardofWorker()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string HR::GivingAChangesInPersonalCardofWorker()
+{
+	// TODO : implement
+	return "";
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HR::PuttingMarkOfReckoningInEmploymentHistoryBook()
+// Purpose:    Implementation of HR::PuttingMarkOfReckoningInEmploymentHistoryBook()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string HR::PuttingMarkOfReckoningInEmploymentHistoryBook()
+{
+	// TODO : implement
+	return "";
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HR::AddingToAPersonalCardMarkThatDocumentsAreReturned()
+// Purpose:    Implementation of HR::AddingToAPersonalCardMarkThatDocumentsAreReturned()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string HR::AddingToAPersonalCardMarkThatDocumentsAreReturned()
+{
+	// TODO : implement
+	return "";
+}
+
+////////////////////////////////////////////////////////////////////////
+// Name:       HR::PuttingAMarkInEmploymentHistoryBook()
+// Purpose:    Implementation of HR::PuttingAMarkInEmploymentHistoryBook()
+// Return:     std::string
+////////////////////////////////////////////////////////////////////////
+
+std::string HR::PuttingAMarkInEmploymentHistoryBook()
+{
+	// TODO : implement
+	return "";
+}

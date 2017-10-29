@@ -20,7 +20,16 @@ public:
 	HR(HR &const hr_copyFrom);
 
     ~HR();
-
+	std::string WriteOrderInPersonalCard(void);
+	int AllowToGoOnBusinessTrip(void);
+	int AllowToGoOnTrainingCourses(void);
+	int AllowToGoOnVacation(void);
+	int AllowToTakeTheHospital(void);
+	std::string ReturnDocs(void);
+	std::string GivingAChangesInPersonalCardofWorker(void);
+	std::string PuttingMarkOfReckoningInEmploymentHistoryBook(void);
+	std::string AddingToAPersonalCardMarkThatDocumentsAreReturned(void);
+	std::string PuttingAMarkInEmploymentHistoryBook(void);
 	void copy(HR const& hr);
 
 protected:
