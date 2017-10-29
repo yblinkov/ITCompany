@@ -13,6 +13,7 @@ class HR;
 class Employee;
 
 class IT_Company {
+
 public:
     IT_Company();
 
@@ -26,8 +27,9 @@ public:
 
     int RecruitPeople(void);
 
-    HR *hr;
-    vector <Employee> employee;
+    HR hr;
+
+    vector<Employee> employee;
 
 protected:
 private:

@@ -12,40 +12,24 @@ class Documents;
 
 class HR {
 public:
+
     HR();
 
     HR(string Firstname, string Position, bool IsOrdered);
 
-    HR::HR(HR *hr_copyFrom);
+	HR(HR &const hr_copyFrom);
 
     ~HR();
 
-    std::string WriteOrderInPersonalCard(void);
-
-    int AllowToGoOnBusinessTrip(void);
-
-    int AllowToGoOnTrainingCourses(void);
-
-    int AllowToGoOnVacation(void);
-
-    int AllowToTakeTheHospital(void);
-
-    std::string ReturnDocs(void);
-
-    std::string GivingAChangesInPersonalCardofWorker(void);
-
-    std::string PuttingMarkOfReckoningInEmploymentHistoryBook(void);
-
-    std::string AddingToAPersonalCardMarkThatDocumentsAreReturned(void);
-
-    std::string PuttingAMarkInEmploymentHistoryBook(void);
+	void copy(HR const& hr);
 
 protected:
 private:
     std::string Firstname;
     std::string Position;
     bool IsOrdered;
-    Documents docs;
+
+    Documents* docs;
 };
 
 #endif

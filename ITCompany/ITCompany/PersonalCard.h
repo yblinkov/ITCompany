@@ -20,11 +20,11 @@ public:
                  int CurrentExperience,
                  string Position,
                  string PensionCertificate,
-                 string MedicalInsurance, string
-                 TaxID,
+                 string MedicalInsurance, 
+				 string TaxID,
                  string MaritalStatus,
-                 int Children, string
-                 EducationDocument,
+                 int Children, 
+				 string EducationDocument,
                  string PassportNumberandSeries
     );
 

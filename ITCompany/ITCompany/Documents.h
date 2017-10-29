@@ -25,8 +25,6 @@ public:
 
     std::string Create(void);
 
-    HR *hR;
-
     std::string EmploymentContract;
 
 protected:

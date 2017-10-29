@@ -14,17 +14,21 @@ int main() {
     {
 
         IT_Company m_IT_Company2(m_IT_Company1);
-        PersonalCard *personalCard = new PersonalCard("Yevgen");
 
-        cout << "person: " << personalCard->FirstName << endl;
-        Documents docs(personalCard);
+        //PersonalCard *personalCard = new PersonalCard("Yevgen");//
 
-        cout << "employment contract: " << docs.EmploymentContract << endl;
+        //cout << "person: " << personalCard->FirstName << endl;//
+        //Documents docs(personalCard);//
 
-        delete personalCard;
+        //cout << "employment contract: " << docs.EmploymentContract << endl;//
+
+        //delete personalCard;//
     }
+
+	delete m_IT_Company1;
 
     cout << "Finish modelling." << endl;
     system("pause");
+
     return 0;
 }
