@@ -11,7 +11,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Documents.cpp" />
+    <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="HR.cpp" />
+    <ClCompile Include="IT_Company.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PersonalCard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Documents.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="HR.h" />
+    <ClInclude Include="IT_Company.h" />
+    <ClInclude Include="PersonalCard.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{050BE6A3-FBCA-4957-9800-EDB425512430}</ProjectGuid>
