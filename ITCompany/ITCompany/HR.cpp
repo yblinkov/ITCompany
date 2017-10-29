@@ -57,10 +57,3 @@ std::string HR::PuttingAMarkInEmploymentHistoryBook()
 {
 	return "";
 }
-void HR::copy(HR const& hr_copyFrom) {
-	cout << "Copy constructor HR" << endl;
-	Firstname = hr_copyFrom.Firstname;
-	Position = hr_copyFrom.Position;
-	IsOrdered = hr_copyFrom.IsOrdered;
-	docs = new Documents(hr_copyFrom.docs);
-};

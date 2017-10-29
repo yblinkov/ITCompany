@@ -30,7 +30,6 @@ public:
 	std::string PuttingMarkOfReckoningInEmploymentHistoryBook(void);
 	std::string AddingToAPersonalCardMarkThatDocumentsAreReturned(void);
 	std::string PuttingAMarkInEmploymentHistoryBook(void);
-	void copy(HR const& hr);
 
 protected:
 private:

@@ -18,8 +18,8 @@ IT_Company::IT_Company(int EmployeeNum, string companyName) :AmountofEmployees(E
 }
 
 IT_Company::IT_Company(IT_Company* copyFrom) :IT_Company(copyFrom->AmountofEmployees, copyFrom->NameOfCompany){//конструктор копіювання
-	cout << "Copy constructor IT_Company" << endl;
-	hr.copy(copyFrom->hr);
+	cout << "Copy constructor IT_Company" << endl; 
+	hr=copyFrom->hr;
 	copyFrom->employee;
 }
 
