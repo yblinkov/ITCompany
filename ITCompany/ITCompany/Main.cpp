@@ -9,6 +9,9 @@ using namespace std;
 int main() {
     cout << "Yevgeniy Blinkov Group IC-63" << endl;
 	cout << "Start modelling..." << endl;
+
+	//Priklad parsingu
+	Documents docs("OrderToAccept1/OrderToDismission2/OrderToGiveVacation3/EmploymentHistoryBook4/Contract5");
 	
 	IT_Company *m_IT_Company1 = new IT_Company();
 

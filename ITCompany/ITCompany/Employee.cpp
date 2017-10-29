@@ -5,7 +5,8 @@ Employee::Employee() : Employee("11.11.11", "prosto!", 666, "12.12.12", "neprost
     cout << "Default Constructor of class Employee" << endl;
 }
 
-Employee::Employee(string m_DateOfAcception, 
+Employee::Employee(
+	string m_DateOfAcception, 
 	string m_CauseOfAcception,
 	int m_NumberOfAcceptionalOrder,
     string m_DateOfDismiss,
@@ -37,7 +38,32 @@ Employee::Employee(Employee *e_copyFrom) :
 	personalCard(e_copyFrom->personalCard){
 
     cout << "Copy constructor Employee" << endl;
-  }
+}
+
+
+Employee::Employee(string fromString) {
+	string tmp = fromString;
+
+	int pos = tmp.find('/');
+	DateOfAcception = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	pos = tmp.find('/');
+	CauseOfAcception = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	pos = tmp.find('/');
+	DateOfDismiss = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	pos = tmp.find('/');
+	CauseOfDismission = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	DateOfReturningMoney = tmp;
+
+	cout << "Constructor of Transformation of 5 arguments Employee: ";
+}
 
 Employee::~Employee() {
     std::cout << "Destroying object Employee\n";

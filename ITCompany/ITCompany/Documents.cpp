@@ -5,6 +5,37 @@ Documents::Documents() : Documents("Accept!", "-", "-", "stazh 5 rokiv", "Contra
 	cout << "Default Constructor of class Documents" << endl;
 }
 
+
+Documents::Documents(string fromString) {
+	string tmp = fromString;
+
+	int pos = tmp.find('/');
+	OrderToAccept = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	pos = tmp.find('/');
+	OrderToDismission = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	pos = tmp.find('/');
+	OrderToGiveVacation = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	pos = tmp.find('/');
+	EmploymentHistoryBook = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	EmploymentContract = tmp;
+
+	cout << "Constructor of Transformation of 5 arguments Documents: " << 
+		" OrderToAccept = " << OrderToAccept <<
+		" OrderToDismission = " << OrderToDismission <<
+		" OrderToGiveVacation = " << OrderToGiveVacation <<
+		" EmploymentHistoryBook = " << EmploymentHistoryBook <<
+		" EmploymentContract = " << EmploymentContract <<
+		endl;
+}
+
 Documents::Documents(
 	string m_OrderToAccept, 
 	string m_OrderToDismission, 

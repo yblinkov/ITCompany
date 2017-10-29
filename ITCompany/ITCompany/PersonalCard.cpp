@@ -1,10 +1,6 @@
 #include "PersonalCard.h"
 
-PersonalCard::PersonalCard(string FirstName) : PersonalCard(FirstName, " 11", " dd", 132, " pp", "PP ", "mm ", "TT ", "MR ", 2, " EE", " SS"){
-	cout << "Default Constructor of class PersonalCard" << endl;
-}
-
-PersonalCard::PersonalCard() :PersonalCard("Name", " 11"," dd", 132," pp","PP ","mm ","TT ","MR ",2," EE"," SS"){
+PersonalCard::PersonalCard() :PersonalCard("Name", " 11"," dd", 132," pp", "PP ", "mm ", "TT ","MR ", 2, " EE", " SS"){
 	cout << "Default Constructor of class PersonalCard" << endl;
 }
 
@@ -36,6 +32,30 @@ PersonalCard::PersonalCard(
 	FirstName(m_FirstName)
 {
 	cout << "Constructor of Inicialization of 5 arguments PersonalCard" << endl;
+}
+
+PersonalCard::PersonalCard(string fromString) {
+	string tmp = fromString;
+
+	int pos = tmp.find('/');
+	FirstName = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	pos = tmp.find('/');
+	Birthday = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	pos = tmp.find('/');
+	Position = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	pos = tmp.find('/');
+	PassportNumberandSeries = tmp.substr(0, pos);
+	tmp = tmp.substr(pos + 1, tmp.length());
+
+	EducationDocument = tmp;
+
+	cout << "Constructor of Transformation of 5 arguments PersonalCard: ";
 }
 
 PersonalCard::PersonalCard(PersonalCard* pc_copyFrom) :

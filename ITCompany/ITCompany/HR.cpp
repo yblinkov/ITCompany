@@ -14,6 +14,18 @@ HR::HR(HR &const hr_copyFrom) : Firstname(hr_copyFrom.Firstname), Position(hr_co
 	docs = new Documents(hr_copyFrom.docs);
 }
 
+HR::HR(string fromString) {
+	string tmp = fromString;
+
+	int pos = tmp.find('/');
+	Firstname = tmp.substr(0, pos);
+	tmp = tmp.substr(0, tmp.length());
+
+	Position = tmp;
+
+	cout << "Constructor of Transformation of 5 arguments HR: ";
+}
+
 HR::~HR() {
     std::cout << "Destroying object HR\n";
 	delete docs;

@@ -17,9 +17,11 @@ public:
               string EmploymentHistoryBook,
               string EmploymentContract);
 
-    Documents::Documents(Documents *docs_copyFrom);
+    Documents(Documents *docs_copyFrom);
 
     Documents(PersonalCard *personalCard);
+
+	Documents(string fromString);
 
     ~Documents();
 

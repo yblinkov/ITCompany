@@ -19,6 +19,8 @@ public:
 
 	HR(HR &const hr_copyFrom);
 
+	HR::HR(string fromString);
+
     ~HR();
 	std::string WriteOrderInPersonalCard(void);
 	int AllowToGoOnBusinessTrip(void);

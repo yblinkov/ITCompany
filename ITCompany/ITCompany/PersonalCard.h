@@ -12,7 +12,7 @@ class PersonalCard {
 public:
     PersonalCard();
 
-    PersonalCard(string FirstName);
+    PersonalCard(string fromString);
 
     PersonalCard(string FirstName,
                  string Birthday,
