@@ -6,11 +6,6 @@ IT_Company::IT_Company() {//конструктор за замовчанням
 	cout << "Default Constructor of class IT_Company" << endl;
 }
 
-//конструктор ініціалізації одного аргументу
-IT_Company::IT_Company(string companyName) :NameOfCompany(companyName){
-	cout << "Constructor of Inicialization 1 argument of IT_Company" << endl;
-}
-
 IT_Company::IT_Company(int EmployeeNum, string companyName) : AmountofEmployees(EmployeeNum), NameOfCompany(companyName){ 
 	//конструктор ініціалізації 2 аргументів
 	cout << "Constructor of Inicialization 2 arguments of IT_Company" << endl;
@@ -25,6 +20,21 @@ IT_Company::IT_Company(IT_Company* copyFrom) :
 	hr(HR(copyFrom->hr)) {
 
 	cout << "Copy constructor IT_Company" << endl; 
+}
+
+IT_Company::IT_Company(string fromString) {
+	int pos = fromString.find('/');
+	string companyNameStr = fromString.substr(0, pos);
+	string amountOfEmployeesStr = fromString.substr(pos + 1, fromString.length());
+
+	NameOfCompany = companyNameStr;
+	AmountofEmployees = atoi(amountOfEmployeesStr.c_str());
+
+	cout << 
+		"'ITCompany' was initialized (transform constructor) with params: " <<
+		" NameOfCompany = " << NameOfCompany <<
+		" AmountofEmployees = " << AmountofEmployees
+		<< endl;
 }
 
 //деструктор

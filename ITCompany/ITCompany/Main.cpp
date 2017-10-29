@@ -13,7 +13,7 @@ int main() {
 	IT_Company *m_IT_Company1 = new IT_Company();
 
 	{
-		IT_Company m_IT_Company2("Default company");
+		IT_Company m_IT_Company2("Company1/2"); // transfor constructor
 		IT_Company m_IT_Company3(1, "Default company");
 		IT_Company m_IT_Company4(m_IT_Company1); 
 	}
