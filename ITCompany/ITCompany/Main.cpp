@@ -7,28 +7,24 @@
 using namespace std;
 
 int main() {
-	cout << "Yevgeniy Blinkov Group IC-63" << endl;
-	cout << "--------------------------------------" << endl;
-	cout << "Start modelling..." << endl;
-	cout << "<==========Version 2===========>" << endl;
+    cout << "Yevgeniy Blinkov Group IC-63" << endl;
+    cout << "Start modelling..." << endl;
 
-	IT_Company* m_IT_Company1 = new IT_Company();
-	{
+    IT_Company *m_IT_Company1 = new IT_Company();
+    {
 
-		IT_Company m_IT_Company2(m_IT_Company1);
-		PersonalCard* personalCard = new PersonalCard("Yevgen"); // stvorennya personalCard dlya vikoristannya yak dgerela dlya peretvorennya
-		cout << "person: " << personalCard->FirstName << endl;// znachennya polya dgerela
-		Documents docs(personalCard); //stvorennya Documents z dgerela pc (PersonalCard)
+        IT_Company m_IT_Company2(m_IT_Company1);
+        PersonalCard *personalCard = new PersonalCard("Yevgen");
 
-		cout << "employment contract: " << docs.EmploymentContract << endl; // Dovedennya sho znachennya polya Documents vzyate na osnovi PersonalCard
+        cout << "person: " << personalCard->FirstName << endl;
+        Documents docs(personalCard);
 
-		delete personalCard;// vidalennya PersonalCard 
-	}
+        cout << "employment contract: " << docs.EmploymentContract << endl;
 
-	
-	//delete m_IT_Company1;
+        delete personalCard;
+    }
 
-	cout << "Finish modelling." << endl;
-	system("pause");
-	return 0;
+    cout << "Finish modelling." << endl;
+    system("pause");
+    return 0;
 }
