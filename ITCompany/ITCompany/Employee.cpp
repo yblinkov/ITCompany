@@ -29,7 +29,7 @@ Employee::Employee(
 	NumberOfDismissalOrder(m_NumberOfDismissalOrder),
 	DateOfReturningMoney(m_DateOfReturningMoney){
 
-    cout << "Constructor of Inicialization of 7 arguments" << endl;
+    cout << "Constructor of Inicialization of 7 arguments of class Employee" << endl;
     personalCard = new PersonalCard();
     PersonalCard personalCard2(personalCard);
 }
