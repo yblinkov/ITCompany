@@ -62,18 +62,6 @@ Documents::Documents(Documents* docs_copyFrom) :
 	cout << "Copy constructor Documents" << endl;
 }
 
-Documents::Documents(PersonalCard* personalCard) : Documents(
-	"Accept!", 
-	"-", 
-	"-", 
-	"Employent history book: " + personalCard->MarkInEmploymentHistoryBook, 
-	"Contract with " + personalCard->FirstName){
-
-	// peretvorennya
-	cout << "Creating object Documents from PersonalCard\n";
-
-}
-
 Documents::~Documents() {
 	cout << "Destroying object Documents\n";
 }
