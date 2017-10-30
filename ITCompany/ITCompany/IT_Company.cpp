@@ -2,7 +2,7 @@
 #include "Employee.h"
 #include "IT_Company.h"
 
-IT_Company::IT_Company() {//конструктор за замовчанням
+IT_Company::IT_Company() :NameOfCompany(""), AmountofEmployees(0){//конструктор за замовчанням
 	cout << "Default Constructor of class IT_Company" << endl;
 }
 

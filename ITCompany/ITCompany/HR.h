@@ -38,7 +38,6 @@ private:
     std::string Firstname;
     std::string Position;
     bool IsOrdered;
-
     Documents* docs;
 };
 

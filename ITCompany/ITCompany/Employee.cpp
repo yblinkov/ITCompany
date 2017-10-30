@@ -1,7 +1,14 @@
 #include "PersonalCard.h"
 #include "Employee.h"
 
-Employee::Employee() : Employee("11.11.11", "prosto!", 666, "12.12.12", "neprosto!", 13, "13.13.13") {
+Employee::Employee() :
+	DateOfAcception(""),
+	CauseOfAcception(""),
+	NumberOfAcceptionalOrder(0),
+	DateOfDismiss(""),
+	CauseOfDismission(""),
+	NumberOfDismissalOrder(0),
+	DateOfReturningMoney(""){
     cout << "Default Constructor of class Employee" << endl;
 }
 

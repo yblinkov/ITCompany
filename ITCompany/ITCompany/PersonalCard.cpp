@@ -1,6 +1,6 @@
 #include "PersonalCard.h"
 
-PersonalCard::PersonalCard() :PersonalCard("Name", " 11"," dd", 132," pp", "PP ", "mm ", "TT ","MR ", 2, " EE", " SS"){
+PersonalCard::PersonalCard() :PersonalCard("", "","",0,"", "", "", "","", 0, "", ""){
 	cout << "Default Constructor of class PersonalCard" << endl;
 }
 

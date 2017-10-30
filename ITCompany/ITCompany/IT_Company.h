@@ -29,10 +29,9 @@ public:
 
     HR hr;
 
-    vector<Employee> employee;
-
 protected:
 private:
+	vector<Employee> employee;
     std::string NameOfCompany;
     int AmountofEmployees;
 };

@@ -1,7 +1,7 @@
 #include "HR.h"
 #include "Documents.h"
 
-Documents::Documents() : Documents("Accept!", "-", "-", "stazh 5 rokiv", "Contract!"){
+Documents::Documents() : Documents("", "", "", "", ""){
 	cout << "Default Constructor of class Documents" << endl;
 }
 

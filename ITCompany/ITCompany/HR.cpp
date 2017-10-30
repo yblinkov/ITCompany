@@ -1,6 +1,6 @@
 #include "HR.h"
 
-HR::HR() : HR("Ivan Ivanovych Ivanov", "Head of HR", false) {
+HR::HR() : HR("", "", false) {
     cout << "Default Constructor of class HR" << endl;
 }
 
