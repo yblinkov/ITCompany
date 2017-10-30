@@ -6,12 +6,12 @@ HR::HR() : HR("", "", false) {
 
 HR::HR(string m_Firstname, string m_Position, bool m_IsOrdered) : Firstname(m_Firstname), Position(m_Position), IsOrdered(m_IsOrdered){
     cout << "Constructor of Inicialization 3 arguments of HR" << endl;
-    docs = new Documents();
+    docs.push_back(new Documents());
 }
 
 HR::HR(HR &const hr_copyFrom) : Firstname(hr_copyFrom.Firstname), Position(hr_copyFrom.Position), IsOrdered(hr_copyFrom.IsOrdered){
     cout << "Copy constructor HR" << endl;
-	docs = new Documents(hr_copyFrom.docs);
+	docs.push_back(new Documents(hr_copyFrom.docs[0]));
 }
 
 HR::HR(string fromString) {
@@ -28,7 +28,7 @@ HR::HR(string fromString) {
 
 HR::~HR() {
     std::cout << "Destroying object HR\n";
-	delete docs;
+	docs.clear();
 }
 
 std::string HR::WriteOrderInPersonalCard()
