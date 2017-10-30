@@ -14,21 +14,9 @@ public:
 
     PersonalCard(string fromString);
 
-    PersonalCard(string FirstName,
-                 string Birthday,
-                 string BirthdayPlace,
-                 int CurrentExperience,
-                 string Position,
-                 string PensionCertificate,
-                 string MedicalInsurance, 
-				 string TaxID,
-                 string MaritalStatus,
-                 int Children, 
-				 string EducationDocument,
-                 string PassportNumberandSeries
-    );
+    PersonalCard(string FirstName, string Birthday,string BirthdayPlace,int CurrentExperience,string Position,string PensionCertificate,string MedicalInsurance, string TaxID,string MaritalStatus,int Children, string EducationDocument,string PassportNumberandSeries);
 
-    PersonalCard::PersonalCard(PersonalCard *pc_copyFrom);
+    PersonalCard(PersonalCard *pc_copyFrom);
 
     ~PersonalCard();
 

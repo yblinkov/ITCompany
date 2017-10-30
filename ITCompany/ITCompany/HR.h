@@ -32,8 +32,8 @@ public:
 
 protected:
 private:
-    std::string Firstname;
-    std::string Position;
+    string Firstname;
+    string Position;
     bool IsOrdered;
     vector<Documents> docs;
 };

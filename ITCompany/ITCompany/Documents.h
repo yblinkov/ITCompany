@@ -11,11 +11,7 @@ class Documents {
 public:
     Documents();
 
-    Documents(string OrderToAccept,
-              string OrderToDismission,
-              string OrderToGiveVacation,
-              string EmploymentHistoryBook,
-              string EmploymentContract);
+    Documents(string OrderToAccept,string OrderToDismission,string OrderToGiveVacation,string EmploymentHistoryBook,string EmploymentContract);
 
     Documents(Documents *docs_copyFrom);
 
@@ -29,10 +25,10 @@ public:
 
 protected:
 private:
-    std::string OrderToAccept;
-    std::string OrderToDismission;
-    std::string OrderToGiveVacation;
-    std::string EmploymentHistoryBook;
+    string OrderToAccept;
+    string OrderToDismission;
+    string OrderToGiveVacation;
+    string EmploymentHistoryBook;
 };
 
 #endif

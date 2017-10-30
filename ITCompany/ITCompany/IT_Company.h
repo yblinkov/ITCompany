@@ -17,7 +17,7 @@ class IT_Company {
 public:
     IT_Company();
 
-    IT_Company::IT_Company(IT_Company *copyFrom);
+    IT_Company(IT_Company *copyFrom);
 
     IT_Company(string companyName);
 
@@ -32,7 +32,7 @@ public:
 protected:
 private:
 	vector<Employee> employee;
-    std::string NameOfCompany;
+    string NameOfCompany;
     int AmountofEmployees;
 };
 
