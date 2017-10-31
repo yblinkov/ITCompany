@@ -8,6 +8,8 @@ IT_Company::IT_Company() :
 		hr(HR()){
 
 	cout << "Default Constructor of class IT_Company" << endl;
+
+	employee.push_back(Employee());
 }
 
 IT_Company::IT_Company(int EmployeeNum, string companyName) :
@@ -16,16 +18,18 @@ IT_Company::IT_Company(int EmployeeNum, string companyName) :
 		hr(HR()){
 
 	cout << "Constructor of Inicialization 2 arguments of IT_Company" << endl;
-	
-	employee.push_back(new Employee());
+
+	employee.push_back(Employee());
 }
 
 IT_Company::IT_Company(const IT_Company& copyFrom) :
 	AmountofEmployees(copyFrom.AmountofEmployees),
 	NameOfCompany(copyFrom.NameOfCompany),
-	hr(HR(copyFrom.hr)) {
+	hr(HR()) {
 
 	cout << "Copy constructor IT_Company" << endl; 
+
+	employee.push_back(Employee());
 }
 
 IT_Company::IT_Company(string fromString) {
@@ -35,6 +39,8 @@ IT_Company::IT_Company(string fromString) {
 
 	NameOfCompany = companyNameStr;
 	AmountofEmployees = atoi(amountOfEmployeesStr.c_str());
+
+	employee.push_back(Employee());
 
 	cout << 
 		"'ITCompany' was initialized (transform constructor) with params: " <<

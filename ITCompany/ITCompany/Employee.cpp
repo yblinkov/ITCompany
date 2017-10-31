@@ -27,11 +27,11 @@ Employee::Employee(
 	DateOfDismiss(m_DateOfDismiss),
 	CauseOfDismission(m_CauseOfDismission),
 	NumberOfDismissalOrder(m_NumberOfDismissalOrder),
-	DateOfReturningMoney(m_DateOfReturningMoney){
+	DateOfReturningMoney(m_DateOfReturningMoney),
+	personalCard(PersonalCard()){
 
     cout << "Constructor of Inicialization of 7 arguments of class Employee" << endl;
-    personalCard = new PersonalCard();
-    PersonalCard personalCard2(personalCard);
+
 }
 
 Employee::Employee(const Employee& e_copyFrom) :
