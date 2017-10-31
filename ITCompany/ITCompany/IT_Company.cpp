@@ -2,18 +2,27 @@
 #include "Employee.h"
 #include "IT_Company.h"
 
-IT_Company::IT_Company() :NameOfCompany(""), AmountofEmployees(0){//конструктор за замовчанням
+IT_Company::IT_Company() :
+		NameOfCompany(""),
+		AmountofEmployees(0),
+		hr(HR()){
+
+	//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	cout << "Default Constructor of class IT_Company" << endl;
 }
 
-IT_Company::IT_Company(int EmployeeNum, string companyName) : AmountofEmployees(EmployeeNum), NameOfCompany(companyName){ 
-	//конструктор ініціалізації 2 аргументів
+IT_Company::IT_Company(int EmployeeNum, string companyName) :
+		AmountofEmployees(EmployeeNum),
+		NameOfCompany(companyName),
+		hr(HR()){
+
+	//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	cout << "Constructor of Inicialization 2 arguments of IT_Company" << endl;
 	
 	employee.push_back(new Employee());
 }
 
-//конструктор копіювання
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 IT_Company::IT_Company(IT_Company* copyFrom) : 
 	AmountofEmployees(copyFrom->AmountofEmployees), 
 	NameOfCompany(copyFrom->NameOfCompany), 
@@ -37,7 +46,7 @@ IT_Company::IT_Company(string fromString) {
 		<< endl;
 }
 
-//деструктор
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 IT_Company::~IT_Company(){
 	std::cout << "Destroying object IT_Company\n";
 	employee.clear();
