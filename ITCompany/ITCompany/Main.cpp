@@ -11,7 +11,9 @@ int main() {
 	cout << "Start modelling..." << endl;
 
 	//Priklad parsingu
-	Documents docs("OrderToAccept1/OrderToDismission2/OrderToGiveVacation3/EmploymentHistoryBook4/Contract5");
+	{
+		Documents docs("OrderToAccept1/OrderToDismission2/OrderToGiveVacation3/EmploymentHistoryBook4/Contract5"); 
+	}
 	//Викликається конструктор ейчара тоді коли створюється іт компанія
 	IT_Company *m_IT_Company1 = new IT_Company();
 
