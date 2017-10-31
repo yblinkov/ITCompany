@@ -58,19 +58,19 @@ PersonalCard::PersonalCard(string fromString) {
 	cout << "Constructor of Transformation of 5 arguments PersonalCard: ";
 }
 
-PersonalCard::PersonalCard(PersonalCard* pc_copyFrom) :
-	Birthday(pc_copyFrom->Birthday), 
-	BirthdayPlace(pc_copyFrom->BirthdayPlace),
-	CurrentExperience(pc_copyFrom->CurrentExperience),
-	Position(pc_copyFrom->Position),
-	PensionCertificate(pc_copyFrom->PensionCertificate),
-	MedicalInsurance(pc_copyFrom->MedicalInsurance),
-	TaxID(pc_copyFrom->TaxID),
-	MaritalStatus(pc_copyFrom->MaritalStatus),
-	Children(pc_copyFrom->Children),
-	EducationDocument(pc_copyFrom->EducationDocument),
-	PassportNumberandSeries(pc_copyFrom->PassportNumberandSeries),
-	FirstName(pc_copyFrom->FirstName)
+PersonalCard::PersonalCard(const PersonalCard& pc_copyFrom) :
+	Birthday(pc_copyFrom.Birthday),
+	BirthdayPlace(pc_copyFrom.BirthdayPlace),
+	CurrentExperience(pc_copyFrom.CurrentExperience),
+	Position(pc_copyFrom.Position),
+	PensionCertificate(pc_copyFrom.PensionCertificate),
+	MedicalInsurance(pc_copyFrom.MedicalInsurance),
+	TaxID(pc_copyFrom.TaxID),
+	MaritalStatus(pc_copyFrom.MaritalStatus),
+	Children(pc_copyFrom.Children),
+	EducationDocument(pc_copyFrom.EducationDocument),
+	PassportNumberandSeries(pc_copyFrom.PassportNumberandSeries),
+	FirstName(pc_copyFrom.FirstName)
 {
 	cout << "Copy constructor PersonalCard" << endl;
 }

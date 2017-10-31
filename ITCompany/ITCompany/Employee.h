@@ -16,9 +16,15 @@ public:
 
 	Employee(string fromString);
 
-    Employee(string m_DateOfAcception,string m_CauseOfAcception, int m_NumberOfAcceptionalOrder,string m_DateOfDismiss, string m_CauseOfDismission, int m_NumberOfDismissalOrder,string m_DateOfReturningMoney);
+    Employee(string m_DateOfAcception,
+             string m_CauseOfAcception,
+             int m_NumberOfAcceptionalOrder,
+             string m_DateOfDismiss,
+             string m_CauseOfDismission,
+             int m_NumberOfDismissalOrder,
+             string m_DateOfReturningMoney);
 
-    Employee(Employee *copyFrom);
+    Employee(const Employee& copyFrom);
 
     ~Employee();
 

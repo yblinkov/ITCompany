@@ -17,7 +17,7 @@ class IT_Company {
 public:
     IT_Company();
 
-    IT_Company(IT_Company *copyFrom);
+    IT_Company(const IT_Company& copyFrom);
 
     IT_Company(string companyName);
 

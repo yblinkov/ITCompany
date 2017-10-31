@@ -20,10 +20,10 @@ IT_Company::IT_Company(int EmployeeNum, string companyName) :
 	employee.push_back(new Employee());
 }
 
-IT_Company::IT_Company(IT_Company* copyFrom) : 
-	AmountofEmployees(copyFrom->AmountofEmployees), 
-	NameOfCompany(copyFrom->NameOfCompany), 
-	hr(HR(copyFrom->hr)) {
+IT_Company::IT_Company(const IT_Company& copyFrom) :
+	AmountofEmployees(copyFrom.AmountofEmployees),
+	NameOfCompany(copyFrom.NameOfCompany),
+	hr(HR(copyFrom.hr)) {
 
 	cout << "Copy constructor IT_Company" << endl; 
 }

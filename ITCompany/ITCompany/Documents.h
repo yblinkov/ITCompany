@@ -11,9 +11,13 @@ class Documents {
 public:
     Documents();
 
-    Documents(string OrderToAccept,string OrderToDismission,string OrderToGiveVacation,string EmploymentHistoryBook,string EmploymentContract);
+    Documents(string OrderToAccept,
+              string OrderToDismission,
+              string OrderToGiveVacation,
+              string EmploymentHistoryBook,
+              string EmploymentContract);
 
-    Documents(Documents *docs_copyFrom);
+    Documents(const Documents& docs_copyFrom);
 
 	Documents(string fromString);
 

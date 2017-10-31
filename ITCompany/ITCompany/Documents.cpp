@@ -52,12 +52,12 @@ Documents::Documents(
 	cout << "Constructor of Initialization of 5 arguments Documents" << endl;
 }
 
-Documents::Documents(Documents* docs_copyFrom) :
-	OrderToAccept(docs_copyFrom->OrderToAccept),
-	OrderToDismission(docs_copyFrom->OrderToDismission),
-	OrderToGiveVacation(docs_copyFrom->OrderToGiveVacation),
-	EmploymentHistoryBook(docs_copyFrom->EmploymentHistoryBook),
-	EmploymentContract(docs_copyFrom->EmploymentContract){
+Documents::Documents(const Documents& docs_copyFrom) :
+	OrderToAccept(docs_copyFrom.OrderToAccept),
+	OrderToDismission(docs_copyFrom.OrderToDismission),
+	OrderToGiveVacation(docs_copyFrom.OrderToGiveVacation),
+	EmploymentHistoryBook(docs_copyFrom.EmploymentHistoryBook),
+	EmploymentContract(docs_copyFrom.EmploymentContract){
 
 	cout << "Copy constructor Documents" << endl;
 }

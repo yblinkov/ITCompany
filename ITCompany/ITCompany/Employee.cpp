@@ -34,15 +34,15 @@ Employee::Employee(
     PersonalCard personalCard2(personalCard);
 }
 
-Employee::Employee(Employee *e_copyFrom) :
-	DateOfAcception(e_copyFrom->DateOfAcception), 
-	CauseOfAcception(e_copyFrom->CauseOfAcception), 
-	NumberOfAcceptionalOrder(e_copyFrom->NumberOfAcceptionalOrder), 
-	DateOfDismiss(e_copyFrom->DateOfDismiss), 
-	CauseOfDismission(e_copyFrom->CauseOfDismission), 
-	NumberOfDismissalOrder(e_copyFrom->NumberOfDismissalOrder), 
-	DateOfReturningMoney(e_copyFrom->DateOfReturningMoney),
-	personalCard(e_copyFrom->personalCard){
+Employee::Employee(const Employee& e_copyFrom) :
+	DateOfAcception(e_copyFrom.DateOfAcception),
+	CauseOfAcception(e_copyFrom.CauseOfAcception),
+	NumberOfAcceptionalOrder(e_copyFrom.NumberOfAcceptionalOrder),
+	DateOfDismiss(e_copyFrom.DateOfDismiss),
+	CauseOfDismission(e_copyFrom.CauseOfDismission),
+	NumberOfDismissalOrder(e_copyFrom.NumberOfDismissalOrder),
+	DateOfReturningMoney(e_copyFrom.DateOfReturningMoney),
+	personalCard(e_copyFrom.personalCard){
 
     cout << "Copy constructor Employee" << endl;
 }
