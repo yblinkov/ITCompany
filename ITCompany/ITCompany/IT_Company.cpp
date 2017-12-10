@@ -2,6 +2,8 @@
 #include "Employee.h"
 #include "IT_Company.h"
 
+///
+///Default constructor
 IT_Company::IT_Company() :
 	NameOfCompany(""),
 	AmountofEmployees(0),
@@ -14,7 +16,6 @@ IT_Company::~IT_Company() {
 }
 
 int IT_Company::IT_Utility() {
-
 	bool v_isOrdered = false;
 	int v_AmountofEmployees = 0;
 	string key = "";
@@ -82,6 +83,7 @@ int IT_Company::IT_Utility() {
 		cout << "Your choise is - " << hr.GetIsOrdered() << endl;
 	}
 }
+/// Recruit people
 int IT_Company::RecruitPeople()
 {
 	string v_NameOfCompany;

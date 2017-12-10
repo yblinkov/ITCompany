@@ -8,9 +8,12 @@ using namespace std;
 
 class Employee;
 
+/// PersonalCard class
 class PersonalCard {
 public:
+	// Default constructor
 	PersonalCard();
+	/// Destructor
 	~PersonalCard();
 
 	string Create(void);
@@ -46,19 +49,33 @@ public:
 	bool CheckChildren(int ñhildren);
 protected:
 private:
+	/// Utility funxtion
 	void PC_Utility();
+	/// firstname
 	string FirstName;
+	/// MarkInEmploymentHistoryBook
 	string MarkInEmploymentHistoryBook;
+	///Birthday
 	string Birthday;
+	///BirthdayPlace
 	string BirthdayPlace;
+	///CurrentExperience
 	int CurrentExperience;
+	/// Position
 	string Position;
+	///PensionCertificate
 	string PensionCertificate;
+	///MedicalInsurance
 	string MedicalInsurance;
+	///TaxID
 	string TaxID;
+	///MaritalStatus
 	string MaritalStatus;
+	///Children
 	int Children;
+	///EducationDocument
 	string EducationDocument;
+	///PassportNumberandSeries
 	string PassportNumberandSeries;
 };
 

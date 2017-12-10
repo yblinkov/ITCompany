@@ -1,0 +1,27 @@
+var class_h_r =
+[
+    [ "HR", "class_h_r.html#a0cb187ef9d2c057d44e9bfcb679eed27", null ],
+    [ "~HR", "class_h_r.html#a23fb380ea282a4193a7f05f81506c779", null ],
+    [ "AddingToAPersonalCardMarkThatDocumentsAreReturned", "class_h_r.html#a896d89581c96f0dcedca7440d2798d15", null ],
+    [ "AllowToGoOnBusinessTrip", "class_h_r.html#af3a791db3d60be02234605865c0979da", null ],
+    [ "AllowToGoOnTrainingCourses", "class_h_r.html#a1a6f8313fedc1e0ad25827b35cb80427", null ],
+    [ "AllowToGoOnVacation", "class_h_r.html#a890c8452142fee7556b7498785f10b6f", null ],
+    [ "AllowToTakeTheHospital", "class_h_r.html#a7f7c6e9ee2f6010fbf53ceb94d18ddfb", null ],
+    [ "CheckIsOrdered", "class_h_r.html#af2203b0b515794db46c12b02bc9b9bd2", null ],
+    [ "GetFirstname", "class_h_r.html#a03a185de9601109b13c6a34c381b7b6f", null ],
+    [ "GetIsOrdered", "class_h_r.html#acbee31efce04c45b16cd9f24c7e2359c", null ],
+    [ "GetPosition", "class_h_r.html#aed5b4581248646ba06467442b080c262", null ],
+    [ "GivingAChangesInPersonalCardofWorker", "class_h_r.html#ad794de5aee2a01b9ac3d5f22d435afba", null ],
+    [ "HR_Utility", "class_h_r.html#a55cb339b18d5eac3fb3a7a9a260d5f98", null ],
+    [ "PuttingAMarkInEmploymentHistoryBook", "class_h_r.html#aacf64628213ae72aa5ff5a1b44e829fa", null ],
+    [ "PuttingMarkOfReckoningInEmploymentHistoryBook", "class_h_r.html#a3f962907d6ed8e81da66d4608ff3660d", null ],
+    [ "ReturnDocs", "class_h_r.html#a0047e05a0a5ebee5dfafe50fe61ee373", null ],
+    [ "SetFirstname", "class_h_r.html#a795d089594c22910ea58938faf131b67", null ],
+    [ "SetIsOrdered", "class_h_r.html#ac927323d22c1580b0b6d258e28294322", null ],
+    [ "SetPosition", "class_h_r.html#ae092262d1dc245604fdb37fbe5564362", null ],
+    [ "WriteOrderInPersonalCard", "class_h_r.html#a3c509dc4449f8406ebd4bac482a8b50c", null ],
+    [ "docs", "class_h_r.html#a3dca2f7facc0c01c245af8a1a1994f37", null ],
+    [ "Firstname", "class_h_r.html#a9d6a324bfb9253c23e71eefeb8bacde2", null ],
+    [ "IsOrdered", "class_h_r.html#a9afdecc986cdc4e15a8d73b30286dbdc", null ],
+    [ "Position", "class_h_r.html#aa19b0e239c73c6f5ab18801f102f1c2e", null ]
+];

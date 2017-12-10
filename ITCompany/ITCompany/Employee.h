@@ -9,21 +9,30 @@ using namespace std;
 
 class PersonalCard;
 
+/// Employee class
 class Employee {
 
 public:
+
+	/// Default constructor
 	Employee();
 
+	///Destructor
 	~Employee();
 
+	/// ORder to dismiss
 	void Dismiss(void);
 
+	/// Returns new position
 	string GetNewPosition(void);
 
+	/// Sends to training course
 	int GoOnTrainingCourses(void);
 
+	/// Returns CV
 	string GiveResume(void);
 
+	// Accepts
 	string AcceptEmploymentContract(void);
 	void SetDateOfAcception(string v_DateOfAcception);
 	void SetCauseOfAcception(string v_CauseOfAcception);

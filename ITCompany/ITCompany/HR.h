@@ -11,10 +11,12 @@ class PersonalCard;
 
 class Documents;
 
+///HR class
 class HR {
 public:
-
+	///Default constructor
 	HR();
+	///Destructor
 	~HR();
 	string WriteOrderInPersonalCard(int i);
 	int AllowToGoOnBusinessTrip(void);
@@ -36,10 +38,15 @@ public:
 	bool CheckIsOrdered(bool isOrdered);
 protected:
 private:
+	/// first name
 	string Firstname;
+	///position
 	string Position;
+	///is ordered
 	bool IsOrdered;
+	/// utility funtioin
 	string HR_Utility(int i);
+	/// contains Documents
 	vector<Documents> docs;
 };
 
