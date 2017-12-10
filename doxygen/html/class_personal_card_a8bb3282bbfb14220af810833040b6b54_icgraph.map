@@ -1,0 +1,5 @@
+<map id="PersonalCard::SetTaxID" name="PersonalCard::SetTaxID">
+<area shape="rect" id="node2" href="$class_personal_card.html#a6a77263e418dd177303bbc03b78256c2" title="Utility funxtion. " alt="" coords="215,13,381,39"/>
+<area shape="rect" id="node3" href="$class_personal_card.html#a774f3b78adef43c85249fe79b3033d38" title="PersonalCard::Create" alt="" coords="429,13,576,39"/>
+<area shape="rect" id="node4" href="$class_employee.html#ad7a5d34564702bc8b880db1714c75413" title="Employee::AcceptEmployment\lContract" alt="" coords="624,5,827,47"/>
+</map>

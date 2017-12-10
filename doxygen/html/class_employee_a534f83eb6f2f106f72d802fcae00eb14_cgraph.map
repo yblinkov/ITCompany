@@ -1,0 +1,9 @@
+<map id="Employee::Employee_Utility_Accept" name="Employee::Employee_Utility_Accept">
+<area shape="rect" id="node2" href="$class_employee.html#a62cc0f19d969528e061ad178a1b109ac" title="Employee::SetDateOfAcception" alt="" coords="222,5,429,32"/>
+<area shape="rect" id="node3" href="$class_employee.html#ad8df9b482bc23365e06357005524c5fd" title="Employee::GetDateOfAcception" alt="" coords="222,56,429,83"/>
+<area shape="rect" id="node4" href="$class_employee.html#a7eebc60f8cfd43fe07fae6196a317b0c" title="Employee::SetCauseOfAcception" alt="" coords="217,107,433,133"/>
+<area shape="rect" id="node5" href="$class_employee.html#a462e85cd69817614a7c9e030fb806f29" title="Employee::GetCauseOfAcception" alt="" coords="217,157,434,184"/>
+<area shape="rect" id="node6" href="$class_employee.html#a48638241e63b03873954369b285d1cd9" title="Employee::CheckNumberOfAcceptional\lOrder" alt="" coords="200,209,451,250"/>
+<area shape="rect" id="node7" href="$class_employee.html#ae0a2d5a5ec36af567bc7e434d18de422" title="Employee::SetNumberOfAcceptional\lOrder" alt="" coords="208,274,443,315"/>
+<area shape="rect" id="node8" href="$class_employee.html#a8ad22e912e2e4e336416df20480ceb54" title="Employee::GetNumberOfAcceptional\lOrder" alt="" coords="208,339,443,381"/>
+</map>

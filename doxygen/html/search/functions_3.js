@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['getnewposition',['GetNewPosition',['../class_employee.html#ae210ea3433b4596f9d3ff5dee4c63bc2',1,'Employee']]],
-  ['giveresume',['GiveResume',['../class_employee.html#a37e77828f9f559a27951e3113b3fb520',1,'Employee']]],
-  ['goontrainingcourses',['GoOnTrainingCourses',['../class_employee.html#a8644c276b8a3cdb8bb62a71a492e574d',1,'Employee']]]
+  ['employee',['Employee',['../class_employee.html#a003c7bd08c40924e381eb0750cbb906f',1,'Employee']]],
+  ['employee_5futility_5faccept',['Employee_Utility_Accept',['../class_employee.html#a534f83eb6f2f106f72d802fcae00eb14',1,'Employee']]],
+  ['employee_5futility_5fdismiss',['Employee_Utility_Dismiss',['../class_employee.html#a6d9c2cbf05d3137a24c322b1525fffa2',1,'Employee']]]
 ];

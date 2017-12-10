@@ -1,0 +1,18 @@
+<map id="IT_Company::RecruitPeople" name="IT_Company::RecruitPeople">
+<area shape="rect" id="node2" href="$class_i_t___company.html#a652c409e38a609c96e788be7687ab744" title="IT_Company::SetNameOfCompany" alt="" coords="237,183,461,209"/>
+<area shape="rect" id="node3" href="$class_i_t___company.html#addd5ab4a8699d8df60fd2cd00a4f9875" title="IT_Company::GetNameOfCompany" alt="" coords="236,233,461,260"/>
+<area shape="rect" id="node4" href="$class_i_t___company.html#a06d2d0d74d96533e474618fb92291c04" title="Utility function. " alt="" coords="273,284,425,311"/>
+<area shape="rect" id="node5" href="$class_h_r.html#a795d089594c22910ea58938faf131b67" title="HR::SetFirstname" alt="" coords="567,5,694,32"/>
+<area shape="rect" id="node6" href="$class_h_r.html#a03a185de9601109b13c6a34c381b7b6f" title="HR::GetFirstname" alt="" coords="567,56,694,83"/>
+<area shape="rect" id="node7" href="$class_h_r.html#ae092262d1dc245604fdb37fbe5564362" title="HR::SetPosition" alt="" coords="573,107,688,133"/>
+<area shape="rect" id="node8" href="$class_h_r.html#aed5b4581248646ba06467442b080c262" title="HR::GetPosition" alt="" coords="573,157,689,184"/>
+<area shape="rect" id="node9" href="$class_h_r.html#ac927323d22c1580b0b6d258e28294322" title="HR::SetIsOrdered" alt="" coords="569,208,693,235"/>
+<area shape="rect" id="node10" href="$class_h_r.html#af2203b0b515794db46c12b02bc9b9bd2" title="HR::CheckIsOrdered" alt="" coords="560,259,701,285"/>
+<area shape="rect" id="node11" href="$class_h_r.html#acbee31efce04c45b16cd9f24c7e2359c" title="HR::GetIsOrdered" alt="" coords="568,309,693,336"/>
+<area shape="rect" id="node12" href="$class_i_t___company.html#a8214142064b5b8f6fed854b45f83a2aa" title="IT_Company::CheckAmountof\lEmployees" alt="" coords="533,361,728,402"/>
+<area shape="rect" id="node13" href="$class_i_t___company.html#a918bdfd512ef8267cf082a20e86a63e9" title="IT_Company::SetAmountofEmployees" alt="" coords="509,427,752,453"/>
+<area shape="rect" id="node14" href="$class_i_t___company.html#ad5210ab4e6ef0a7c9b218678645410e4" title="IT_Company::GetAmountofEmployees" alt="" coords="509,477,752,504"/>
+<area shape="rect" id="node15" href="$class_h_r.html#a3c509dc4449f8406ebd4bac482a8b50c" title="HR::WriteOrderInPersonalCard" alt="" coords="531,528,730,555"/>
+<area shape="rect" id="node16" href="$class_h_r.html#a0047e05a0a5ebee5dfafe50fe61ee373" title="HR::ReturnDocs" alt="" coords="573,579,689,605"/>
+<area shape="rect" id="node17" href="$class_h_r.html#a55cb339b18d5eac3fb3a7a9a260d5f98" title="utility funtioin " alt="" coords="800,579,907,605"/>
+</map>

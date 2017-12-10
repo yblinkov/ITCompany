@@ -1,0 +1,12 @@
+<map id="Employee::Dismiss" name="Employee::Dismiss">
+<area shape="rect" id="node2" href="$class_employee.html#a6d9c2cbf05d3137a24c322b1525fffa2" title="Employee::Employee\l_Utility_Dismiss" alt="" coords="188,209,335,250"/>
+<area shape="rect" id="node3" href="$class_employee.html#acbb98daeb702b22d616c8b7064784210" title="Employee::SetDateOfDismiss" alt="" coords="405,5,600,32"/>
+<area shape="rect" id="node4" href="$class_employee.html#a9bf98793dad6f452b3b99b353a4a6635" title="Employee::GetDateOfDismiss" alt="" coords="405,56,601,83"/>
+<area shape="rect" id="node5" href="$class_employee.html#ac129a41d2cb756360ad056bf39c25464" title="Employee::SetCauseOfDismission" alt="" coords="391,107,614,133"/>
+<area shape="rect" id="node6" href="$class_employee.html#aa7e35077b13efe6cbc362dc7b561b010" title="Employee::GetCauseOfDismission" alt="" coords="391,157,614,184"/>
+<area shape="rect" id="node7" href="$class_employee.html#ac7bf1d7191d60ada37e85f8d311a254d" title="Employee::CheckNumberOfDismissal\lOrder" alt="" coords="383,209,623,250"/>
+<area shape="rect" id="node8" href="$class_employee.html#abcf46d071f43b17f0a83b00a327822b9" title="Employee::SetNumberOfDismissal\lOrder" alt="" coords="391,274,614,315"/>
+<area shape="rect" id="node9" href="$class_employee.html#a521952ca263ba6ad783c634631070076" title="Employee::GetNumberOfDismissal\lOrder" alt="" coords="391,339,615,381"/>
+<area shape="rect" id="node10" href="$class_employee.html#a3ffb3c8c2dc4817f88801be832eb8caa" title="Employee::SetDateOfReturning\lMoney" alt="" coords="401,405,604,446"/>
+<area shape="rect" id="node11" href="$class_employee.html#a7782178746f3640942450a0f7271ef60" title="Employee::GetDateOfReturning\lMoney" alt="" coords="401,470,605,511"/>
+</map>
