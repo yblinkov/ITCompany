@@ -1,39 +1,28 @@
 #include "HR.h"
 
-HR::HR() : HR("", "", false) {
-    cout << "Default Constructor of class HR" << endl;
+HR::HR() {
 	docs.push_back(Documents());
 }
 
-HR::HR(string m_Firstname, string m_Position, bool m_IsOrdered) : Firstname(m_Firstname), Position(m_Position), IsOrdered(m_IsOrdered){
-    cout << "Constructor of Inicialization 3 arguments of HR" << endl;
-    docs.push_back(Documents());
-}
-
-HR::HR(HR &const hr_copyFrom) : Firstname(hr_copyFrom.Firstname), Position(hr_copyFrom.Position), IsOrdered(hr_copyFrom.IsOrdered){
-    cout << "Copy constructor HR" << endl;
-	docs.push_back(Documents(hr_copyFrom.docs[0]));
-}
-
-HR::HR(string fromString) {
-	string tmp = fromString;
-
-	int pos = tmp.find('/');
-	Firstname = tmp.substr(0, pos);
-	tmp = tmp.substr(0, tmp.length());
-
-	Position = tmp;
-
-	cout << "Constructor of Transformation of 5 arguments HR: ";
-}
-
 HR::~HR() {
-    std::cout << "Destroying object HR\n";
 	docs.clear();
 }
 
-std::string HR::WriteOrderInPersonalCard()
+string HR::HR_Utility(int i) {
+	string order = docs[i].GetOrderToDismission();
+	if (docs[i].CheckOrderToDismiss(order)) {
+		return docs[i].GetOrderToDismission();
+	}
+	return "";
+}
+
+std::string HR::WriteOrderInPersonalCard(int i)
 {
+
+	cout << "<========Area of HR========>" << endl;
+	docs.push_back(Documents());
+	docs[i].Create();
+	cout << "<========End Of Area of HR========>" << endl;
 	return "";
 }
 
@@ -57,9 +46,9 @@ int HR::AllowToTakeTheHospital()
 	return 1;
 }
 
-std::string HR::ReturnDocs()
+std::string HR::ReturnDocs(int i)
 {
-	return "";
+	return HR_Utility(i);;
 }
 
 std::string HR::GivingAChangesInPersonalCardofWorker()
@@ -80,4 +69,33 @@ std::string HR::AddingToAPersonalCardMarkThatDocumentsAreReturned()
 std::string HR::PuttingAMarkInEmploymentHistoryBook()
 {
 	return "";
+}
+void HR::SetFirstname(string v_Firstname) {
+	Firstname = v_Firstname;
+}
+
+void HR::SetPosition(string v_Position) {
+	Position = v_Position;
+}
+
+void HR::SetIsOrdered(bool v_IsOrdered) {
+	IsOrdered = v_IsOrdered;
+}
+
+string HR::GetFirstname() {
+	return Firstname;
+}
+
+string HR::GetPosition() {
+	return Position;
+}
+
+bool HR::GetIsOrdered() {
+	return IsOrdered;
+}
+
+bool HR::CheckIsOrdered(bool v_IsOrdered) {
+	if (v_IsOrdered == false) {
+		return false;
+	}
 }

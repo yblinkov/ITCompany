@@ -10,25 +10,25 @@ class Documents {
 
 public:
     Documents();
-
-    Documents(string OrderToAccept,
-              string OrderToDismission,
-              string OrderToGiveVacation,
-              string EmploymentHistoryBook,
-              string EmploymentContract);
-
-    Documents(const Documents& docs_copyFrom);
-
-	Documents(string fromString);
-
     ~Documents();
 
-    std::string Create(void);
+    std::string Create();
 
     std::string EmploymentContract;
 
+	void SetOrderToAccept(string v_OrderToAccept);
+	void SetOrderToDismission(string v_OrderToDismission);
+	void SetOrderToGiveVacation(string v_OrderToGiveVacation);
+	void SetEmploymentHistoryBook(string v_EmploymentHistoryBook);
+
+	string GetOrderToAccept();
+	string GetOrderToDismission();
+	string GetOrderToGiveVacation();
+	string GetEmploymentHistoryBook();
+	bool CheckOrderToDismiss(string orderToDismiss);
 protected:
 private:
+	string Docs_Utility();
     string OrderToAccept;
     string OrderToDismission;
     string OrderToGiveVacation;

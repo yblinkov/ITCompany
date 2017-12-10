@@ -14,18 +14,6 @@ class Employee {
 public:
     Employee();
 
-	Employee(string fromString);
-
-    Employee(string m_DateOfAcception,
-             string m_CauseOfAcception,
-             int m_NumberOfAcceptionalOrder,
-             string m_DateOfDismiss,
-             string m_CauseOfDismission,
-             int m_NumberOfDismissalOrder,
-             string m_DateOfReturningMoney);
-
-    Employee(const Employee& copyFrom);
-
     ~Employee();
 
     void Dismiss(void);
@@ -37,7 +25,23 @@ public:
     string GiveResume(void);
 
     string AcceptEmploymentContract(void);
+	void SetDateOfAcception(string v_DateOfAcception);
+	void SetCauseOfAcception(string v_CauseOfAcception);
+	void SetNumberOfAcceptionalOrder(int v_NumberOfAcceptionalOrder);
+	void SetDateOfDismiss(string v_DateOfDismiss);
+	void SetCauseOfDismission(string v_CauseOfDismission);
+	void SetNumberOfDismissalOrder(int v_NumberOfDismissalOrder);
+	void SetDateOfReturningMoney(string v_DateOfReturningMoney);
 
+	string GetDateOfAcception();
+	string GetCauseOfAcception();
+	int GetNumberOfAcceptionalOrder();
+	string GetDateOfDismiss();
+	string GetCauseOfDismission();
+	int GetNumberOfDismissalOrder();
+	string GetDateOfReturningMoney();
+	bool CheckNumberOfAcceptionalOrder(int numberOfAcceptionalOrder);
+	bool CheckNumberOfDismissalOrder(int numberOfDismissalOrder);
 protected:
 private:
     string DateOfAcception;
@@ -47,6 +51,8 @@ private:
     string CauseOfDismission;
     int NumberOfDismissalOrder;
     string DateOfReturningMoney;
+	void Employee_Utility_Dismiss();
+	void Employee_Utility_Accept();
     PersonalCard personalCard;
 };
 

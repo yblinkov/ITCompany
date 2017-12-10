@@ -7,30 +7,27 @@
 using namespace std;
 
 int main() {
-	cout << "Yevgeniy Blinkov Group IC-63" << endl;
+	cout << "Yevgeniy Blinkov    Group IS-63   Number Of Gradebook IS6303 " << endl;
+	cout << "<=====================Version 3============================> " << endl;
 	cout << "Start modelling..." << endl;
 
-	//Priklad parsingu
-	{
-		Documents docs("OrderToAccept1/OrderToDismission2/OrderToGiveVacation3/EmploymentHistoryBook4/Contract5");
+	IT_Company *m_IT_Company1 = new IT_Company();
+	string key = "";
+	cout << endl << endl << "Do you want to start a program?.Write 'yes' to start or 'no' to finish" << endl;
+	while (key != "yes" && key != "no") {
+		cout << "Your choise is: ";
+		cin >> key;
+		if (key != "yes" && key != "no") {
+			cout << "No! Please input 'yes' to start or 'no' to finish" << endl;
+		}
 	}
-	//Викликається конструктор ейчара тоді коли створюється іт компанія
-	{
-		cout << "-----Example 1-----" << endl;
-		IT_Company *m_IT_Company1 = new IT_Company();
-		delete m_IT_Company1;
+	if (key == "yes") {
+		(*m_IT_Company1).RecruitPeople();
 	}
-	{
-		cout << "-----Example 2 - transformation constructor-----" << endl;
-		IT_Company m_IT_Company2("Company1/2"); // transfor constructor
-		cout << "-----Example 3-----" << endl;
-		IT_Company m_IT_Company3(1, "Default company");
-		cout << "-----Example 4-----" << endl;
-		IT_Company m_IT_Company4(m_IT_Company2); 
-	}
+	delete m_IT_Company1;
+	cout << endl << endl;
+	cout << "Finish modelling." << endl;
+	system("pause");
 
-    cout << "Finish modelling." << endl;
-    system("pause");
-
-    return 0;
+	return 0;
 }

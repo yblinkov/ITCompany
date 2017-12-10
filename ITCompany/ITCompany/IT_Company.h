@@ -17,23 +17,22 @@ class IT_Company {
 public:
     IT_Company();
 
-    IT_Company(const IT_Company& copyFrom);
-
-    IT_Company(string companyName);
-
-    IT_Company(int EmployeeNum, string companyName);
-
     ~IT_Company();
 
     int RecruitPeople(void);
 
     HR hr;
-
+	void SetNameOfCompany(string v_NameOfCompany);
+	void SetAmountofEmployees(int v_AmountofEmployees);
+	string GetNameOfCompany();
+	int GetAmountofEmployees();
+	bool CheckAmountofEmployees(int v_AmountofEmployees);
 protected:
 private:
 	vector<Employee> employee;
     string NameOfCompany;
     int AmountofEmployees;
+	int IT_Utility();
 };
 
 #endif

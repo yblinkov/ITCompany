@@ -15,26 +15,31 @@ class HR {
 public:
 
     HR();
-    HR(string Firstname, string Position, bool IsOrdered);
-	HR(HR &const hr_copyFrom);
-	HR::HR(string fromString);
     ~HR();
-	string WriteOrderInPersonalCard(void);
+	string WriteOrderInPersonalCard(int i);
 	int AllowToGoOnBusinessTrip(void);
 	int AllowToGoOnTrainingCourses(void);
 	int AllowToGoOnVacation(void);
 	int AllowToTakeTheHospital(void);
-	string ReturnDocs(void);
-	string GivingAChangesInPersonalCardofWorker(void);
+	string ReturnDocs(int i);
+	string GivingAChangesInPersonalCardofWorker();
 	string PuttingMarkOfReckoningInEmploymentHistoryBook(void);
 	string AddingToAPersonalCardMarkThatDocumentsAreReturned(void);
 	string PuttingAMarkInEmploymentHistoryBook(void);
 
+	void SetFirstname(string v_Firstname);
+	void SetPosition(string v_Position);
+	void SetIsOrdered(bool v_IsOrdered);
+	string GetFirstname();
+	string GetPosition();
+	bool GetIsOrdered();
+	bool CheckIsOrdered(bool isOrdered);
 protected:
 private:
     string Firstname;
     string Position;
     bool IsOrdered;
+	string HR_Utility(int i);
     vector<Documents> docs;
 };
 
