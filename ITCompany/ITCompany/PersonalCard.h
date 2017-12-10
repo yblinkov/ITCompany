@@ -10,10 +10,10 @@ class Employee;
 
 class PersonalCard {
 public:
-    PersonalCard();
-    ~PersonalCard();
+	PersonalCard();
+	~PersonalCard();
 
-    string Create(void);
+	string Create(void);
 	void SetFirstName(string v_FirstName);
 	void SetMarkInEmploymentHistoryBook(string v_MarkInEmploymentHistoryBook);
 	void SetBirthday(string v_Birthday);
@@ -49,17 +49,17 @@ private:
 	void PC_Utility();
 	string FirstName;
 	string MarkInEmploymentHistoryBook;
-    string Birthday;
-    string BirthdayPlace;
-    int CurrentExperience;
-    string Position;
-    string PensionCertificate;
-    string MedicalInsurance;
-    string TaxID;
-    string MaritalStatus;
-    int Children;
-    string EducationDocument;
-    string PassportNumberandSeries;
+	string Birthday;
+	string BirthdayPlace;
+	int CurrentExperience;
+	string Position;
+	string PensionCertificate;
+	string MedicalInsurance;
+	string TaxID;
+	string MaritalStatus;
+	int Children;
+	string EducationDocument;
+	string PassportNumberandSeries;
 };
 
 #endif

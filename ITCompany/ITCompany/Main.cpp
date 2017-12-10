@@ -6,6 +6,9 @@
 
 using namespace std;
 
+/*
+Main function
+*/
 int main() {
 	cout << "Yevgeniy Blinkov    Group IS-63   Number Of Gradebook IS6303 " << endl;
 	cout << "<=====================Version 3============================> " << endl;

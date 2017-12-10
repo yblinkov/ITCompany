@@ -14,8 +14,8 @@ class Documents;
 class HR {
 public:
 
-    HR();
-    ~HR();
+	HR();
+	~HR();
 	string WriteOrderInPersonalCard(int i);
 	int AllowToGoOnBusinessTrip(void);
 	int AllowToGoOnTrainingCourses(void);
@@ -36,11 +36,11 @@ public:
 	bool CheckIsOrdered(bool isOrdered);
 protected:
 private:
-    string Firstname;
-    string Position;
-    bool IsOrdered;
+	string Firstname;
+	string Position;
+	bool IsOrdered;
 	string HR_Utility(int i);
-    vector<Documents> docs;
+	vector<Documents> docs;
 };
 
 #endif

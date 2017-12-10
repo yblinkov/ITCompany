@@ -9,12 +9,12 @@ class HR;
 class Documents {
 
 public:
-    Documents();
-    ~Documents();
+	Documents();
+	~Documents();
 
-    std::string Create();
+	std::string Create();
 
-    std::string EmploymentContract;
+	std::string EmploymentContract;
 
 	void SetOrderToAccept(string v_OrderToAccept);
 	void SetOrderToDismission(string v_OrderToDismission);
@@ -29,10 +29,10 @@ public:
 protected:
 private:
 	string Docs_Utility();
-    string OrderToAccept;
-    string OrderToDismission;
-    string OrderToGiveVacation;
-    string EmploymentHistoryBook;
+	string OrderToAccept;
+	string OrderToDismission;
+	string OrderToGiveVacation;
+	string EmploymentHistoryBook;
 };
 
 #endif

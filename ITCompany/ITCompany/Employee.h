@@ -12,19 +12,19 @@ class PersonalCard;
 class Employee {
 
 public:
-    Employee();
+	Employee();
 
-    ~Employee();
+	~Employee();
 
-    void Dismiss(void);
+	void Dismiss(void);
 
-    string GetNewPosition(void);
+	string GetNewPosition(void);
 
-    int GoOnTrainingCourses(void);
+	int GoOnTrainingCourses(void);
 
-    string GiveResume(void);
+	string GiveResume(void);
 
-    string AcceptEmploymentContract(void);
+	string AcceptEmploymentContract(void);
 	void SetDateOfAcception(string v_DateOfAcception);
 	void SetCauseOfAcception(string v_CauseOfAcception);
 	void SetNumberOfAcceptionalOrder(int v_NumberOfAcceptionalOrder);
@@ -44,16 +44,16 @@ public:
 	bool CheckNumberOfDismissalOrder(int numberOfDismissalOrder);
 protected:
 private:
-    string DateOfAcception;
-    string CauseOfAcception;
-    int NumberOfAcceptionalOrder;
-    string DateOfDismiss;
-    string CauseOfDismission;
-    int NumberOfDismissalOrder;
-    string DateOfReturningMoney;
+	string DateOfAcception;
+	string CauseOfAcception;
+	int NumberOfAcceptionalOrder;
+	string DateOfDismiss;
+	string CauseOfDismission;
+	int NumberOfDismissalOrder;
+	string DateOfReturningMoney;
 	void Employee_Utility_Dismiss();
 	void Employee_Utility_Accept();
-    PersonalCard personalCard;
+	PersonalCard personalCard;
 };
 
 #endif
